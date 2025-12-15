@@ -1,6 +1,12 @@
 
     
-Here's a complete index.html login page that integrates the KPRCAS logo you uploaded. This version assumes the logo image is saved as kprcas-logo.jpeg in the same folder as your HTML file:
+
+   
+Here's a complete HTML code snippet for a login page that includes:
+- A form with username and password fields
+- A submit button
+- The KPRCAS logo (based on the image you uploaded)
+- Basic styling for a clean layout
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,79 +14,68 @@ Here's a complete index.html login page that integrates the KPRCAS logo you uplo
   <title>KPRCAS Login</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
     .login-container {
-      background-color: #ffffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      width: 350px;
+      width: 300px;
     }
     .logo {
-      width: 120px;
-      margin-bottom: 10px;
-    }
-    .tagline {
-      font-size: 14px;
-      color: green;
-      font-weight: bold;
+      width: 100px;
       margin-bottom: 20px;
     }
     h2 {
       margin-bottom: 20px;
-      color: #0077b6;
+      color: #004080;
     }
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 12px;
-      margin: 8px 0;
+      padding: 10px;
+      margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 5px;
     }
     button {
       width: 100%;
-      padding: 12px;
-      background-color: #0077b6;
+      padding: 10px;
+      background: #004080;
       color: white;
       border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 5px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #005f8e;
+      background: #0066cc;
     }
   </style>
 </head>
 <body>
   <div class="login-container">
-    <img src="kprcas-logo.jpeg" alt="KPRCAS Logo" class="logo">
-    <div class="tagline">LEARN BEYOND</div>
+    <img src="your-logo-path.jpeg" alt="KPRCAS Logo" class="logo">
     <h2>Login to KPRCAS</h2>
-    <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
       <button type="submit">Login</button>
     </form>
   </div>
 </body>
 </html>
 
-
-✅ Setup Instructions:
-- Save this code as index.html.
-- Rename your uploaded logo image to kprcas-logo.jpeg.
-- Place both the HTML file and the image in the same folder.
-- Open index.html in a browser to view the login page.
-Would you like me to add features like "Forgot Password", "Remember Me", or link it to a backend system?
+
+Notes:
+- Replace "your-logo-path.jpeg" with the actual path to your logo image.
+- The form action /login should be updated to match your backend login handler.
+Would you like me to help you add features like “Forgot Password” or “Remember Me”?
+     
+ 
